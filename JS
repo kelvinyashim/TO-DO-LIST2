@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 style="text-align:center">TO DO-LIST</h2>
+
+
+<form >
+<input id="demo"  type="text" onclick="add()">
+<button>Add</button> <button>Clear</button>
+<p id="demo1"></p>
+</form>
+<ol id  = "add"></ol>
+<script>
+function add(){
+var item = document.getElementById("demo").value;
+var txt = document.createTextNode(item);
+var newItem = document.createElement("li");
+newItem.appendChild(txt);
+document.getElementById("add").appendChild(newItem);
+};
+
+
+</script>
+
+</body>
+</html>
